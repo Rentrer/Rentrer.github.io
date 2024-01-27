@@ -2552,7 +2552,6 @@ figure.highlight pre .javascript .function {
   }
 }
 #icat-about-page .Socialize .S-img .img-box {
-  background: url("https://img.meuicat.com/blog/21.webp") no-repeat center;
   background-size: contain;
   aspect-ratio: 8/16;
   height: 95%;
@@ -5069,7 +5068,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   top: calc(50% - 7px);
   color: #f47466;
-  content: '\f0c1';
+  content: '\f863';
   left: 0;
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;

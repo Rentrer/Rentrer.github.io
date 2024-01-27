@@ -1,21 +1,55 @@
 @font-face {
-    font-family: "iconfont";
-    /* Project id 4410267 */
-    src: url('//at.alicdn.com/t/c/font_4410267_f42tixxnadm.woff2?t=1705212848269') format('woff2'), url('//at.alicdn.com/t/c/font_4410267_f42tixxnadm.woff?t=1705212848269') format('woff'), url('//at.alicdn.com/t/c/font_4410267_f42tixxnadm.ttf?t=1705212848269') format('truetype');
+  font-family: "iconfont"; /* Project id 3498204 */
+  src: url('iconfont.woff2?t=1659311976990') format('woff2'),
+       url('iconfont.woff?t=1659311976990') format('woff'),
+       url('iconfont.ttf?t=1659311976990') format('truetype');
 }
 
 .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-homefill:before {
-    content: "\e6bb";
+.icon-danmu:before {
+  content: "\e612";
 }
 
-.icon-home:before {
-    content: "\e77c";
+.icon-biaoqian:before {
+  content: "\e63d";
 }
+
+.icon-fenlei:before {
+  content: "\e601";
+}
+
+.icon-fanti:before {
+  content: "\e6d8";
+}
+
+.icon-baidu:before {
+  content: "\e60a";
+}
+
+.icon-csdn:before {
+  content: "\e600";
+}
+
+.icon-RSS:before {
+  content: "\e78a";
+}
+
+.icon-bilibili:before {
+  content: "\e609";
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-zhihu:before {
+  content: "\e60d";
+}
+
