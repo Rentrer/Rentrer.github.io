@@ -633,13 +633,16 @@ body:has(#anMusic-page) #nav-music {
 
 #anMusic-page .aplayer-info .aplayer-lrc {
     height: 800%;
-    margin-top: 80px;
+    margin-top: 10px;
     mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000);
 }
 
 #anMusic-page .aplayer-info .aplayer-lrc p {
-    font-size: 14px;
-    color: #fff;
+    font-size: 20px;
+    line-height: 20px!important;
+    height: 20px!important;
+    margin: 20px 0!important;
+    color: #fff
 }
 
 #anMusic-page .aplayer .aplayer-lrc:after,
