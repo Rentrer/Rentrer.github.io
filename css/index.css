@@ -178,6 +178,144 @@ template {
 [hidden] {
   display: none
 }
+body .snackbar-container {
+  background: var(--anzhiyu-main) !important;
+  color: var(--anzhiyu-white) !important;
+  border-radius: 0 !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  max-width: none !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+  left: 0 !important;
+  height: 61px !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  z-index: 99999;
+}
+body .snackbar-container p {
+  font-weight: 700 !important;
+  text-align: center !important;
+  font-size: 1.1rem !important;
+}
+body .snackbar-container .action {
+  color: var(--anzhiyu-white) !important;
+  padding: 4px 6px !important;
+  font-weight: 700;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border: var(--style-border) !important;
+}
+body .snackbar-container .action:hover {
+  color: var(--anzhiyu-main) !important;
+  background: var(--anzhiyu-white);
+}
+body .snackbar-container::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: var(--anzhiyu-white);
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10);
+  content: "";
+  -webkit-animation: snackbar-progress var(--anzhiyu-snackbar-time) linear forwards;
+  -moz-animation: snackbar-progress var(--anzhiyu-snackbar-time) linear forwards;
+  -o-animation: snackbar-progress var(--anzhiyu-snackbar-time) linear forwards;
+  -ms-animation: snackbar-progress var(--anzhiyu-snackbar-time) linear forwards;
+  animation: snackbar-progress var(--anzhiyu-snackbar-time) linear forwards;
+  pointer-events: none;
+  will-change: transform;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+@-moz-keyframes snackbar-progress {
+  from {
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes snackbar-progress {
+  from {
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@-o-keyframes snackbar-progress {
+  from {
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes snackbar-progress {
+  from {
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
 .limit-one-line,
 #article-container .flink .flink-item-name,
 #article-container .flink .flink-item-desc,
@@ -3312,7 +3450,7 @@ figure.highlight pre .javascript .function {
   }
 }
 .layout > div:first-child {
-  width: 76%;
+  width: 75%;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3654,7 +3792,7 @@ h1.page-title + .tag-cloud-list {
   text-align: left;
 }
 #aside-content {
-  width: 24%;
+  width: 25%;
 }
 @media screen and (min-width: 900px) {
   #aside-content {

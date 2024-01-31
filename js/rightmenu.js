@@ -1,11 +1,11 @@
 //22.12.8 update：add mask
 //22.12.9 update: add search in this page
 function setMask() { //设置遮罩层
-    if (document.getElementsByClassName("rmMask")[0] != undefined) {
-        return document.getElementsByClassName("rmMask")[0];
+    if (document.getElementsByClassName("rmfMask")[0] != undefined) {
+        return document.getElementsByClassName("rmfMask")[0];
     }
     mask = document.createElement('div');
-    mask.className = "rmMask";
+    mask.className = "rmfMask";
     mask.style.width = window.innerWidth + 'px';
     mask.style.height = window.innerHeight + 'px';
     mask.style.background = '#fff';
@@ -97,11 +97,12 @@ rmf.copyWordsLink = function() {
     txa.select();
     document.execCommand("Copy");
     document.body.removeChild(txa);
-    Snackbar.show({
-        text: '链接复制成功！快去分享吧！',
-        pos: 'top-right',
-        showAction: false
-    });
+    btf.snackbarShow('复制本页链接地址成功', false, 2000);
+    // Snackbar.show({
+    //     text: '链接复制成功！快去分享吧！',
+    //     pos: 'top-right',
+    //     showAction: false
+    // });
 }
 rmf.switchReadMode = function() {
     const $body = document.body
@@ -123,6 +124,7 @@ rmf.switchReadMode = function() {
 //复制选中文字
 rmf.copySelect = function() {
     document.execCommand('Copy', false, null);
+    btf.snackbarShow('复制成功', false, 2000);
     //这里可以写点东西提示一下 已复制
 }
 
@@ -226,7 +228,7 @@ function popupMenu() {
             //       });
             // }
             rmf.paste = function() {
-                navigator.permissions
+                navigator.permfissions
                     .query({
                         name: 'clipboard-read'
                     })
@@ -249,13 +251,13 @@ function popupMenu() {
         }
         let pageX = event.clientX + 10;
         let pageY = event.clientY;
-        let rmWidth = $('#rightMenu').width();
-        let rmHeight = $('#rightMenu').height();
-        if (pageX + rmWidth > window.innerWidth) {
-            pageX -= rmWidth + 10;
+        let rmfWidth = $('#rightMenu').width();
+        let rmfHeight = $('#rightMenu').height();
+        if (pageX + rmfWidth > window.innerWidth) {
+            pageX -= rmfWidth + 10;
         }
-        if (pageY + rmHeight > window.innerHeight) {
-            pageY -= pageY + rmHeight - window.innerHeight;
+        if (pageY + rmfHeight > window.innerHeight) {
+            pageY -= pageY + rmfHeight - window.innerHeight;
         }
         mask = setMask();
         window.onscroll = () => {
